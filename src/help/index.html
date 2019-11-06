@@ -1,0 +1,30 @@
+@@include('../partials/html-header.tpl')
+
+@@include('../partials/main-nav.tpl', {
+	"active": "writer"
+})
+
+<main>
+	@@include('../modules/intro.tpl', {
+		"title": "Help",
+		"description": "If you don't find the question you are searching for in the following list, please feel free to contact me: <a href='mailto:ben@timetracker.one'>ben@timetracker.one</a>",
+		"hasButton": false
+	})
+
+	<hr />
+
+
+	@@include('../modules/help.tpl', {
+		"questions": [{
+			"question": "Is timetracker.one free?",
+			"answer": "Yes, it does not cost anything at the moment."
+		}]
+	})
+
+</main>
+
+<!-- build:remove -->
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
+
+@@include('../partials/html-footer.tpl')

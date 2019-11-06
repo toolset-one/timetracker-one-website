@@ -1,0 +1,29 @@
+@@include('partials/html-header.tpl')
+
+@@include('partials/main-nav.tpl', {
+	"active": "home"
+})
+
+<main>
+	@@include('modules/intro.tpl', {
+		"title": "Timetracker.One",
+		"description": "Timetracker.One is your online timelog. It's fast and secure. There's nothing to download.",
+		"hasButton": false
+	})
+
+	<hr />
+
+	<p>
+		Do you still use spreadsheets to note down your times? Stop this hassle and give Timetracker.One a go.<br />
+		<a href="https://app.timetracker.one">
+			Try our app
+		</a>
+	</p>
+
+</main>
+
+<!-- build:remove -->
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
+
+@@include('partials/html-footer.tpl')
