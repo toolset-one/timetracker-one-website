@@ -9,7 +9,7 @@
     <meta name="description" content="Timetracker.One is your online timelog tool." />
     <link rel="stylesheet" type="text/css" href="/styles.css" />
     <title>
-    	Timetracker.One
+    	@@title
    	</title>
 </head>
 <body>
